@@ -1,0 +1,15 @@
+name: Coveralls_Codecov
+on: [push, pull_request]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      OS: ubuntu-latest
+      PYTHON: "3.9"
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4.5.0
+        with:
+          python-version: "3.11"
