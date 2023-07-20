@@ -17,4 +17,6 @@ class Person:
     
     @surname.setter
     def surname(self, value):
+        if len(value) == 0 or isinstance(value, type(None)):
+            raise Exception
         self.surname = value
