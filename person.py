@@ -16,5 +16,5 @@ class Person:
         self.name = value
     
     @surname.setter
-    def name(self, value):
+    def surname(self, value):
         self.surname = value
